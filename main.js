@@ -46,7 +46,7 @@ if(message.content.startsWith(prefix)) {
             }
         } else {
             if(command == "register") {
-        
+// Dont do anything
             } else {
                 message.reply(`idk who are you, try to ${prefix}register`)
             }
