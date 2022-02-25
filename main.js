@@ -82,25 +82,3 @@ message.reply("succes registered!")
 })
 
 client.login(token);
-
-/*
-    if(command == "hi") {
-        message.reply("this your first command!...")
-    } else {
-        if(command == "unregister") {
-            fs.unlinkSync(dbPath);
-            message.reply("youre now unregistered!");
-        } else {
-        if(command == "me") {
-            if(fs.existsSync(dbPath)) {
-            const data = fs.readFileSync(dbPath);
-            message.reply(data);
-              } else {
-            message.reply("somethign went wrong");
-              }
-           } else {
-        if(command == "YOUR_NEXT_COMMAND") {
-            message.reply("YOUR_NEXT_REPLT_:)")
-             }
-           }
-*/
