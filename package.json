@@ -1,0 +1,25 @@
+{
+  "name": "registerbot",
+  "version": "1.0.0",
+  "description": "A registration bot",
+  "main": "main.js",
+  "scripts": {
+    "test": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/github.com/FrenzY8.git"
+  },
+  "keywords": [
+    "RegistrationBOT"
+  ],
+  "author": "FreenzySG",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/github.com/FrenzY8/issues"
+  },
+  "homepage": "https://github.com/github.com/FrenzY8#readme",
+  "dependencies": {
+    "discord.js": "^13.6.0"
+  }
+}
