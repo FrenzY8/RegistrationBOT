@@ -1,5 +1,6 @@
 {
-    "token": "your-discord-bot-token",
-    "owner": "owner-account-id",
-    "prefix": "."
+    "token": "discord_bot_token",
+    "owner": "owner_bot_token",
+    "prefix": ".",
+    "haspermission": "admin_id_or_staff_or_anything_thats_can_manage_your_bot"
 }

@@ -5,7 +5,7 @@ const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_
 
 // Configurations
 const bulan = new Date();
-const { owner, prefix, token } = require('./cfg.json')
+const { owner, prefix, token, haspermission } = require('./cfg.json')
 
 client.on('ready', () => {
     console.log("redy! asfuk")
@@ -38,15 +38,31 @@ if(message.content.startsWith(prefix)) {
                     message.reply("somethign went wrong");
                       }
                    } else {
-                if(command == "YOUR_NEXT_COMMAND") {
-                    message.reply("YOUR_NEXT_REPLT_:)")
+                if(command == "unregisterperson") {
+                    if(message.author.id == owner || message.author.id == haspermission) {
+                    const thePerson = args[0]
+                    if(!thePerson) { // the Blank Message
+                        message.reply(`idk whos thats, ${prefix}unregisterperson <author id>`)
+                    } else {
+                    const path = `./database/${thePerson}.json`
+                    if(fs.existsSync(path)) {
+                        fs.unlinkSync(path) // We unregister the person. <delete from db>
+                        message.reply("succes unregister the person!") // Gave the notify
+                    } else {
+                        message.reply("No users with ID" + thePerson + "")
+                    }
+                    }
+                    //here
+                    } else {
+                        message.reply("only owner/admin can do that.")
+                    }
                      }
                    }
                 }
             }
         } else {
             if(command == "register") {
-// Dont do anything
+        
             } else {
                 message.reply(`idk who are you, try to ${prefix}register`)
             }
