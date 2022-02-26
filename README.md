@@ -10,6 +10,7 @@ A Discord.js registration bot without any database module needed. only saved on 
 {
     "token": "token",
     "owner": "owner-account-id",
-    "prefix": "-"
+    "prefix": "-",
+    "haspermission": "adminid"
 }
 ```
